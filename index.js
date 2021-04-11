@@ -11,7 +11,7 @@ client.commands = new Collection();
 client.aliases = new Collection();
 client.catagories = readdirSync('./commands/');
 client.instance = axios.create({
-    baseURL: 'https://localhost:3000',
+    baseURL: 'http://localhost:3000',
 });
 ["command"].forEach(handler => {
     require(`./handlers/${handler}`)(client);

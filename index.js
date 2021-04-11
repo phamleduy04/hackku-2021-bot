@@ -11,7 +11,7 @@ client.commands = new Collection();
 client.aliases = new Collection();
 client.catagories = readdirSync('./commands/');
 client.instance = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://814d531e73bd.ngrok.io',
 });
 ["command"].forEach(handler => {
     require(`./handlers/${handler}`)(client);

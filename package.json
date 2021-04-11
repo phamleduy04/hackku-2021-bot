@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "nodemon": "^2.0.7"
+  },
+  "name": "hackku-2021-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phamleduy04/hackku-2021-bot.git",
+  "author": "<phamleduy04@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  }
+}

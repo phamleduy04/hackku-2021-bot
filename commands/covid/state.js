@@ -6,7 +6,7 @@ module.exports = {
     run: async (client, message, args) => {
         if (!args[0]) return message.channel.send('Please enter a state name to search!');
         const data = await client.instance.get(`/wom/state/${args.join(' ')}`);
-        if (data.message) return message.channel.send('Not found!');
+        if (data.data.message) return message.channel.send('Not found!');
         const { state, updated, cases, todayCases, deaths, todayDeaths, recovered, active } = data.data;
         const embed = new MessageEmbed()
             .setAuthor(`COVID-19 info at ${state},US`)
